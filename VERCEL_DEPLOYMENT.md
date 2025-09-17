@@ -1,5 +1,21 @@
 # Vercel 部署指南
 
+## 🚨 构建失败？环境变量错误？
+
+如果您看到以下构建错误：
+```
+❌ Invalid environment variables: {
+  NEXTAUTH_SECRET: [ 'Required' ],
+  GITHUB_CLIENT_ID: [ 'Required' ],
+  GITHUB_CLIENT_SECRET: [ 'Required' ],
+  STRIPE_API_KEY: [ 'Required' ],
+  STRIPE_WEBHOOK_SECRET: [ 'Required' ],
+  NEXT_PUBLIC_APP_URL: [ 'Required' ]
+}
+```
+
+**立即解决方案：** 请查看 [VERCEL_ENV_SETUP.md](./VERCEL_ENV_SETUP.md) 获取详细的环境变量配置指南。
+
 ## 构建错误解决方案
 
 如果在Vercel部署时遇到"无效的环境变量"错误，这是因为缺少必需的环境变量。请按照以下步骤配置：
